@@ -22,8 +22,6 @@ const Constraction = () => {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };
