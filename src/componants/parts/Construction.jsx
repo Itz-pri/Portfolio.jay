@@ -3,7 +3,7 @@ import React from 'react'
 const Constraction = () => {
   return (
     <div className="absolute">
-      <div className="bg-[url('pattern.svg')] bg-center h-22 border-t-5 border-b-5 flex items-center justify-center w-full animate-slide">
+      <div className="bg-[url('/pattern.svg')] bg-center h-22 border-t-5 border-b-5 flex items-center justify-center w-full animate-slide">
         
         <div className="whitespace-nowrap flex">
           
