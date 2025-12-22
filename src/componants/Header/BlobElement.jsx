@@ -33,7 +33,7 @@ const BlobElement = () => {
 
       {/* ------------------Dribbble-------------------- */}
 
-      <motion.div initial={{ filter: 'blur(5px)' }} animate={{ y: [-300, 0], opacity: [0, 1], filter: 'blur(0px)' }} transition={{ duration: 0.5,ease:'easeInOut' }} className={`flex absolute md:relative scale-28 sm:scale-60 lg:scale-80 xl:scale-75 justify-center items-center -top-8 md:top-20 lg:top-50 -right-47 sm:-right-30 md:right-30 lg:right-0 shrink-0 hover:animate-none animate-(--animate-wiggle-rev) rounded-full overflow-hidden
+      <motion.div initial={{ filter: 'blur(5px)' }} animate={{ y: [-300, 0], opacity: [0, 1], filter: 'blur(0px)' }} transition={{ duration: 0.5,ease:'easeInOut' }} className={`flex absolute md:relative scale-28 sm:scale-40 lg:scale-50 xl:scale-75 justify-center items-center -top-8 md:top-20 lg:top-36 xl:top-50 -right-47 sm:-right-30 md:right-30 lg:right-15 shrink-0 hover:animate-none animate-(--animate-wiggle-rev) rounded-full overflow-hidden
         ${!isHovered2 ? "animate-(--animate-wiggle)" : "animate-none"}0
         `}>
 
