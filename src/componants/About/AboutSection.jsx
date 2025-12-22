@@ -14,31 +14,34 @@ const AboutSection = () => {
 
     const container = useRef(null);
 
-    useGSAP(
-        () => {
-            // GSAP official API
-            const split = SplitText.create(container.current.children, {
-                type: "lines",
-                linesClass: "line",
-            });
+   useGSAP(
+  async () => {
+    await document.fonts.ready;
 
-            gsap.from(split.lines, {
-                yPercent: 100,
-                opacity: 0,
-                duration: 0.9,
-                ease: "power4.out",
-                stagger: 0.2,
-                scrollTrigger: {
-                    trigger: container.current,
-                    start: "top 80%", // while in view
-                    toggleActions: "play none none none",
-                },
-            });
+    const split = SplitText.create(container.current.children, {
+      type: "lines",
+      linesClass: "line",
+    });
 
-            return () => split.revert();
-        },
-        { scope: container }
-    );
+    gsap.set(container.current, { autoAlpha: 1 });
+
+    gsap.from(split.lines, {
+      yPercent: 100,
+      opacity: 0,
+      duration: 0.9,
+      ease: "power4.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: container.current,
+        start: "top 80%",
+        toggleActions: "play",
+      },
+    });
+
+    return () => split.revert();
+  },
+  { scope: container }
+);
 
     return (
         <section className='h-[92vh] sm:h-screen relative w-screen border-t-2 bg-[#DAC7F5] flex justify-center items-center overflow-hidden z-20' id="mainAbout">
@@ -108,7 +111,9 @@ const AboutSection = () => {
 
             {/* ------------------ Para section -------------------- */}
 
-            <div ref={container} className='font-comfortaa-bold relative h-4/6 sm:h-4/5 w-full md:w-[60%] lg:w-[52%] py-8 md:py-0 px-5 sm:px-10 md:px-2 flex flex-col text-[0.9rem] sm:text-[1.4rem] md:text-[1.4rem] xl:text-[1.7rem] xl:gap-10 justify-evenly lg:items-center text-justify' id="about">
+            <div ref={container}
+                id="about"
+                className="font-comfortaa-bold relative h-4/6 sm:h-4/5 w-full md:w-[60%] lg:w-[52%] py-8 md:py-0 px-5 sm:px-10 md:px-2 flex flex-col text-[0.9rem] sm:text-[1.4rem] md:text-[1.4rem] xl:text-[1.7rem] xl:gap-10 justify-evenly lg:items-center opacity-0">
 
                 {["I am a B.Tech IT student and a passionate UI/UX designer who loves crafting clean, intuitive, and user-centered experiences.",
 
