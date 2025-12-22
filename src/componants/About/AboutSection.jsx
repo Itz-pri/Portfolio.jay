@@ -41,11 +41,11 @@ const AboutSection = () => {
   );
 
     return (
-        <section className='relative w-screen h-screen border-t-2 bg-[#DAC7F5] flex justify-center items-center overflow-hidden z-20' id="mainAbout">
+        <section className='h-[92vh] sm:h-screen relative w-screen border-t-2 bg-[#DAC7F5] flex justify-center items-center overflow-hidden z-20' id="mainAbout">
 
             {/* ------------------ Dino -------------------- */}
 
-            <div className=" absolute left-0 bottom-0 h-[700px] w-50 overflow-hidden shrink-0">
+            <div className=" absolute left-0 bottom-0 h-[200px] sm:h-[700px] w-40 sm:w-50 overflow-hidden shrink-0">
                 <TrexGame />
             </div>
 
@@ -102,9 +102,9 @@ const AboutSection = () => {
 
             <div ref={container} className='font-comfortaa-bold relative h-4/6 sm:h-4/5 w-full md:w-[60%] lg:w-[52%] py-8 md:py-0 px-5 sm:px-10 md:px-2 flex flex-col text-[0.9rem] sm:text-[1.4rem] md:text-[1.4rem] xl:text-[1.7rem] xl:gap-10 justify-evenly text-justify' id="about">
 
-                {["I am a B.Tech IT student and a passionate UI/UX designer who loves crafting clean, intuitive, and user-centered experiences",
+                {["I am a B.Tech IT student and a passionate UI/UX designer who loves crafting clean, intuitive, and user-centered experiences.",
 
-                "I enjoy designing modern interfaces, experimenting with design systems, and bringing ideas to life with Figma and front-end development. I also love blending tech and creativity to make things that just feel right",
+                "I enjoy designing modern interfaces, experimenting with design systems, and bringing ideas to life with Figma and front-end development. I also love blending tech and creativity to make things that just feel right.",
 
                 "Currently, I'm looking for opportunities to collaborate on meaningful projects and grow as a designer and developer.",
 
@@ -112,9 +112,9 @@ const AboutSection = () => {
 
                 {/* ------------------ Quotes -------------------- */}
 
-                <motion.img initial={{x:"-50px",opacity:"0"}} whileInView={{x:"0",opacity:"1"}} transition={{duration:.5, ease:'easeIn'}} className='absolute size-20 sm:size-30 md:size-40 lg:size-50 xl:size-70 -top-10 sm:-top-3 md:-top-10 lg:-top-20 xl:-top-30 -left-4 sm:-left-5 md:-left-30 lg:-left-40 xl:-left-55' src="ic_quotes.svg" alt="top quotes" />
+                <img className='absolute size-20 sm:size-30 md:size-40 lg:size-50 xl:size-70 -top-10 sm:-top-3 md:-top-10 lg:-top-20 xl:-top-30 -left-4 sm:-left-5 md:-left-30 lg:-left-40 xl:-left-55' src="ic_quotes.svg" alt="top quotes" />
 
-                <motion.img className='absolute size-20 sm:size-30 md:size-40 lg:size-50 xl:size-70 -bottom-10 sm:bottom-0 md:-bottom-10 lg:-bottom-15 xl:-bottom-25 -right-4 sm:right-0 md:-right-25 lg:-right-40 xl:-right-50 scale-x-[-1]' src="ic_quotes.svg" alt="bottom quotes" />
+                <img className='absolute size-20 sm:size-30 md:size-40 lg:size-50 xl:size-70 -bottom-10 sm:bottom-0 md:-bottom-10 lg:-bottom-15 xl:-bottom-25 -right-4 sm:right-0 md:-right-25 lg:-right-40 xl:-right-50 scale-x-[-1]' src="ic_quotes.svg" alt="bottom quotes" />
 
             </div>
         </section>

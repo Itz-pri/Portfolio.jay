@@ -4,11 +4,11 @@ const MovingPath = () => {
 
     return (
         <div className=" shrink-0">
-            <div id="groundMove" className='absolute h-full w-7xl  shrink-0 animate-slideGround'>
+            <div id="groundMove" className='absolute h-full w-7xl  shrink-0 sm:animate-slideGround'>
                 <img className='absolute bottom-3 h-8' src="ground.png" alt="" />
 
             </div>
-            <div id="groundMove" className='absolute h-full w-7xl  shrink-0 animate-slideGround2'>
+            <div id="groundMove" className='absolute h-full w-7xl  shrink-0 sm:animate-slideGround2'>
                 <img className='absolute bottom-3 h-8 ' src="ground.png" alt="" />
 
             </div>

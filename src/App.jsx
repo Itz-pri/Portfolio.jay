@@ -19,15 +19,15 @@ const locomotiveScroll = new LocomotiveScroll();
     bgColor: "var(--card-bg-mint)"
   }, {
     icon: "https://cdn.brandfetch.io/idJFz6sAsl/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1740371012427",
-    btnText: "Connect me",
+    btnText: "view profile",
     bgColor: "var(--card-bg-lightBlue)"
   }, {
     icon: "dribbble.svg",
-    btnText: "Visit Dribbble",
+    btnText: "View Profile",
     bgColor: "var(--card-bg-pink)"
   }, {
     icon: "https://cdn.brandfetch.io/idxhowbknc/theme/light/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1758076627341",
-    btnText: "Visit Behance",
+    btnText: "view profile",
     bgColor: "var(--card-bg-darkBlue)"
   }]
 

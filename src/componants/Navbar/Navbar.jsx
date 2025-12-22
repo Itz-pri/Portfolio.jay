@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <section className="w-full z-50 fixed top-0 left-0" id='mainNav'>
-            <div className="relative border-b-4 bg-(--bg-Primary-Color) z-10 flex justify-between items-center w-full h-16 sm:h-20 overflow-hidden " id='navBar'>
+            <div className="relative border-b-4 bg-(--bg-Primary-Color) z-10 flex justify-between items-center w-full h-[8vh] sm:h-20 overflow-hidden " id='navBar'>
                 <div id='logo'>
                     <img
                         onMouseDown={() => { setDuration(20); setShadow(true); logoClick() }}
