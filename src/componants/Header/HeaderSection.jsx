@@ -10,7 +10,7 @@ const HeaderSection = () => {
   
 
   return (
-    <section className=' h-[90vh] sm:h-[99vh] w-screen border-b-4 overflow-hidden relative' id="mainHeader">
+    <section className=' h-[96vh] sm:h-[99vh] w-screen border-b-4 overflow-hidden relative' id="mainHeader">
       <div className='w-full h-full flex flex-col md:flex-row items-center justify-center mx-auto overflow-x-hidden' id="header">
 
 
