@@ -111,9 +111,13 @@ const AboutSection = () => {
 
             {/* ------------------ Para section -------------------- */}
 
+<<<<<<< HEAD
             <div ref={container}
                 id="about"
                 className="font-comfortaa-bold relative h-4/6 sm:h-4/5 w-full md:w-[60%] lg:w-[52%] py-8 md:py-0 px-5 sm:px-10 md:px-2 flex flex-col text-[0.9rem] sm:text-[1.4rem] md:text-[1.4rem] xl:text-[1.7rem] xl:gap-10 justify-evenly lg:items-center opacity-0">
+=======
+            <div ref={container} className='font-comfortaa-bold relative h-4/6 sm:h-4/5 w-full md:w-[60%] lg:w-[52%] py-8 md:py-0 px-5 sm:px-10 md:px-2 flex flex-col text-[0.9rem] sm:text-[1.4rem] md:text-[1.4rem] xl:text-[1.7rem] xl:gap-10 justify-evenly lg:items-center' id="about">
+>>>>>>> 9a47834d9eb75ca469814044c38eb45abd1e79a2
 
                 {["I am a B.Tech IT student and a passionate UI/UX designer who loves crafting clean, intuitive, and user-centered experiences.",
 
