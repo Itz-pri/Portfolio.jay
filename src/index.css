@@ -84,6 +84,12 @@ img {
   -webkit-user-drag: none;
 }
 
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE 10+ */
+  user-select: none;         /* Standard */
+}
+
 @keyframes slide {
   0% {
     transform: translateX(-20.5%);

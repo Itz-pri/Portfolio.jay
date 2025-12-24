@@ -41,7 +41,7 @@ const HeaderSection = () => {
   
 
   return (
-    <section className=' h-[96vh] sm:h-screen w-screen border-b-4 overflow-hidden relative' id="mainHeader">
+    <section className=' h-[96vh] sm:h-screen w-screen border-b-4 overflow-hidden relative no-select' id="mainHeader">
       <div className='w-full h-full flex flex-col md:flex-row items-center justify-center mx-auto overflow-x-hidden' id="header">
 
 
@@ -59,12 +59,9 @@ const HeaderSection = () => {
 
           < motion.p ref={paraRef} className=' font-comfortaa-reg mb-6 text-[1.4rem] sm:text-[1.5rem] text-center md:text-left px-7.5 md:px-0 -mt-8 lg:mt-0 w-95 sm:w-145 md:w-152 shrink'>An Aspiring and soon to be UI/UX designer with a love for simlicity :D</motion.p>
 
-          {/* initial={{scale:0.7,filter: 'blur(5px)'}} animate={{scale:1,filter: 'blur(0px)'}} transition={{delay:0.2}} */}
-
           {/* ------------------ Resume me button -------------------- */}
 
-
-          <div className="relative flex justify-center mx-auto md:mx-0 flex-col md:w-sm lg:w-xl rounded-lg md:justify-start ">
+          <div className="relative flex justify-center mx-auto md:mx-0 flex-col md:w-sm lg:w-xl z-30 rounded-lg md:justify-start ">
 
             <div className=" h-full w-full flex absolute -right-2">
               <StyledButtonShadow />
@@ -106,8 +103,7 @@ const HeaderSection = () => {
         </div>
 
       </div>
-      <div className="absolute w-5/6 h-[63%] left-0 top-0 z-50"></div>
-      <div className="absolute w-1/2 h-full right-0 top-0 z-50"></div>
+      <div className="absolute w-full h-full z-4"></div>
     </section>
   )
 }
