@@ -79,14 +79,10 @@ body {
   font-style: normal;
 }
 
-/* @keyframes slide {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+img {
+  user-select: none;
+  -webkit-user-drag: none;
 }
-
-.animate-slide {
-  animation: slide 3000s linear infinite;
-} */
 
 @keyframes slide {
   0% {
@@ -113,7 +109,7 @@ body {
 }
 
 .animate-slideGround {
-  animation: slideGround 5s linear infinite;
+  animation: slideGround 15s linear infinite 1s;
 }
 
 @keyframes slideGround2 {
@@ -127,5 +123,5 @@ body {
 }
 
 .animate-slideGround2 {
-  animation: slideGround2 5s linear infinite;
+  animation: slideGround2 15s linear infinite 1s;
 }

@@ -8,7 +8,7 @@ const TrexGame = () => {
     <>
       <div id='mainTrex' className='shrink-0'>
         <DinoRuning />
-        <MovingPath />
+        {/* <MovingPath /> */}
       </div>
     </>
   )

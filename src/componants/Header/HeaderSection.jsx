@@ -106,6 +106,8 @@ const HeaderSection = () => {
         </div>
 
       </div>
+      <div className="absolute w-5/6 h-[63%] left-0 top-0 z-50"></div>
+      <div className="absolute w-1/2 h-full right-0 top-0 z-50"></div>
     </section>
   )
 }

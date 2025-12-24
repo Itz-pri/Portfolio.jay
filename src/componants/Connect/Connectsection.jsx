@@ -19,9 +19,9 @@ const Connectsection = (props) => {
 
             <div className="h-5 w-full border-t-4 bg-[#DAC7F5]"></div>
 
-            <div className=" flex flex-col items-center justify-center min-h-[1850px] bg-[#DAC7F5] lg:min-h-[980px] w-full">
+            <div className=" flex flex-col items-center justify-center min-h-[1850px] bg-[#DAC7F5] lg:min-h-screen w-full">
 
-                <div className="flex z-10 mb-25 gap-5 h-full sm:w-[60%] lg:w-[72%] items-center justify-center overflow-hidden -translate-y-20 md:translate-y-0 ">
+                <div className="flex z-10 mb-25 gap-5 h-full sm:w-[60%] lg:w-[72%] items-center justify-center overflow-hidden -translate-y-20 md:translate-y-20 ">
 
                     <div className="flex gap-5 w-full h-full flex-wrap items-center justify-center lg:items-start ">
 
