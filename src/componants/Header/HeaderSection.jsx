@@ -103,7 +103,6 @@ const HeaderSection = () => {
         </div>
 
       </div>
-      <div className="absolute w-full h-full z-4"></div>
     </section>
   )
 }

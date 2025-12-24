@@ -120,7 +120,7 @@ const AboutSection = () => {
 
             {/* ------------------ Dino -------------------- */}
 
-            <div ref={dinoRef} onClick={onClickDino} onDoubleClick={onDblClickDino} className="Dino absolute left-0 sm:left-0 bottom-0 h-96 w-50 sm:w-60 shrink-0 overflow-hidden">
+            <div ref={dinoRef} onClick={onClickDino} onDoubleClick={onDblClickDino} className="Dino absolute left-0 sm:left-0 bottom-0 h-96 w-50 sm:w-60 shrink-0 overflow-hidden z-1">
                 <TrexGame />
             </div>
 
@@ -160,7 +160,7 @@ const AboutSection = () => {
 
             {/* ------------------ Circle pattern -------------------- */}
 
-            <div className="absolute md:top-0 lg:top-0 xl:top-5 md:-right-20 lg:-right-40 xl:-right-30 scale-0 lg:scale-70 xl:scale-[90%]">
+            <div className="absolute md:top-0 lg:top-0 xl:top-5 md:-right-20 lg:-right-40 xl:-right-30 scale-0 lg:scale-70 xl:scale-[90%] z-1">
                 <CirclePattern />
             </div>
 
@@ -180,7 +180,7 @@ const AboutSection = () => {
             {/* ------------------ Construction Pattern section -------------------- */}
 
 
-            <div className="absolute -bottom-9 sm:-bottom-13 md:-bottom-14 xl:-bottom-21 -left-50 sm:-left-40 md:-left-30 lg:-left-20 xl:-left-10 scale-80 lg:scale-100 -rotate-5">
+            <div className="absolute -bottom-9 sm:-bottom-13 md:-bottom-14 xl:-bottom-21 -left-50 sm:-left-40 md:-left-30 lg:-left-20 xl:-left-10 scale-80 lg:scale-100 -rotate-5 z-2">
                 <Constraction />
             </div>
 
@@ -205,8 +205,8 @@ const AboutSection = () => {
                 <img className='absolute size-20 sm:size-30 md:size-40 lg:size-50 xl:size-70 -bottom-10 sm:bottom-0 md:-bottom-10 lg:-bottom-15 xl:-bottom-25 -right-4 sm:right-0 md:-right-25 lg:-right-40 xl:-right-50 scale-x-[-1]' src="ic_quotes.svg" alt="bottom quotes" />
 
             </div>
-            <div className="absolute w-5/6 left-0 top-0 h-5/6 z-50"></div>
-            <div className="absolute w-7/8 right-0 bottom-0 h-3/4 z-50"></div>
+            <div className="absolute w-full h-full z-0 "></div>
+            {/* <div className="absolute w-7/8 right-0 bottom-0 h-3/4 z-50 opacity-20 bg-amber-500"></div> */}
         </section>
     )
 }
