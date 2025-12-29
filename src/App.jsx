@@ -33,7 +33,7 @@ const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <BackToTop /> */}
       <div>
         <HeaderSection />
